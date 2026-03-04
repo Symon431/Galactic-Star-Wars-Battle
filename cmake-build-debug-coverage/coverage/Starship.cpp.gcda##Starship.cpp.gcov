@@ -1,0 +1,220 @@
+        -:    0:Source:C:/Users/Admin/CLionProjects/2655389/Starship.cpp
+        -:    0:Graph:C:\Users\Admin\CLionProjects\2655389\cmake-build-debug-coverage\CMakeFiles\2655389.dir\Starship.cpp.gcno
+        -:    0:Data:C:\Users\Admin\CLionProjects\2655389\cmake-build-debug-coverage\CMakeFiles\2655389.dir\Starship.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "Starship.h"
+        -:    2:
+        -:    3:
+function _ZN13StarDestroyerC2Ev called 4 returned 100% blocks executed 100%
+        4:    4:StarDestroyer::StarDestroyer() {
+        4:    4-block  0
+call    0 returned 4
+        4:    5:    size = 5;
+        4:    6:    hits_to_destroy = 4;
+        4:    7:    laser_bursts = 3;
+        4:    8:    status = 0;
+        4:    9:}
+        -:   10:
+function _ZNK13StarDestroyer19get_hits_to_destroyEv called 0 returned 0% blocks executed 0%
+    #####:   11:int StarDestroyer::get_hits_to_destroy() const{
+    #####:   12:    return hits_to_destroy;
+    %%%%%:   12-block  0
+        -:   13:}
+        -:   14:
+function _ZNK13StarDestroyer8get_sizeEv called 0 returned 0% blocks executed 0%
+    #####:   15:int StarDestroyer::get_size() const{
+    #####:   16:    return size;
+    %%%%%:   16-block  0
+        -:   17:}
+        -:   18:
+function _ZNK13StarDestroyer16get_laser_burstsEv called 0 returned 0% blocks executed 0%
+    #####:   19:int StarDestroyer::get_laser_bursts() const{
+    #####:   20:    return laser_bursts;
+    %%%%%:   20-block  0
+        -:   21:}
+        -:   22:
+function _ZNK13StarDestroyer10get_statusEv called 0 returned 0% blocks executed 0%
+    #####:   23:int StarDestroyer::get_status() const{
+    #####:   24:    return status;
+    %%%%%:   24-block  0
+        -:   25:}
+        -:   26:
+function _ZN13StarDestroyer9setStatusEi called 4 returned 100% blocks executed 100%
+        4:   27:void StarDestroyer::setStatus(int status) {
+        4:   28:    this->status = status;
+        4:   29:}
+        -:   30:
+function _ZN13StarDestroyer19set_hits_to_destroyEi called 0 returned 0% blocks executed 0%
+    #####:   31:void StarDestroyer::set_hits_to_destroy(int hits) {
+    #####:   32:    this->hits_to_destroy = hits_to_destroy - hits;
+    #####:   33:    if (hits_to_destroy < 0) {
+    %%%%%:   33-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   34:        hits_to_destroy = 0;
+    %%%%%:   34-block  0
+        -:   35:    }
+    #####:   36:}
+        -:   37:
+function _ZN18MonCalamariCruiserC2Ev called 3 returned 100% blocks executed 100%
+        3:   38:MonCalamariCruiser::MonCalamariCruiser() {
+        3:   38-block  0
+call    0 returned 3
+        3:   39:    size = 4;
+        3:   40:    hits_to_destroy = 3;
+        3:   41:    laser_bursts = 4;
+        3:   42:    status = 0;
+        3:   43:}
+        -:   44:
+function _ZN18MonCalamariCruiser9setStatusEi called 3 returned 100% blocks executed 100%
+        3:   45:void MonCalamariCruiser::setStatus(int status) {
+        3:   46:    this->status = status;
+        3:   47:}
+        -:   48:
+function _ZN18MonCalamariCruiser19set_hits_to_destroyEi called 0 returned 0% blocks executed 0%
+    #####:   49:void MonCalamariCruiser::set_hits_to_destroy(int hits) {
+    #####:   50:    this->hits_to_destroy = hits_to_destroy - hits;
+    #####:   51:    if (hits_to_destroy < 0) {
+    %%%%%:   51-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   52:        hits_to_destroy = 0;
+    %%%%%:   52-block  0
+        -:   53:    }
+    #####:   54:}
+        -:   55:
+function _ZNK18MonCalamariCruiser19get_hits_to_destroyEv called 0 returned 0% blocks executed 0%
+    #####:   56:int MonCalamariCruiser::get_hits_to_destroy() const {
+    #####:   57:    return hits_to_destroy;
+    %%%%%:   57-block  0
+        -:   58:}
+        -:   59:
+function _ZNK18MonCalamariCruiser8get_sizeEv called 0 returned 0% blocks executed 0%
+    #####:   60:int MonCalamariCruiser::get_size() const {
+    #####:   61:    return size;
+    %%%%%:   61-block  0
+        -:   62:}
+        -:   63:
+function _ZNK18MonCalamariCruiser16get_laser_burstsEv called 0 returned 0% blocks executed 0%
+    #####:   64:int MonCalamariCruiser::get_laser_bursts() const {
+    #####:   65:    return laser_bursts;
+    %%%%%:   65-block  0
+        -:   66:}
+        -:   67:
+function _ZNK18MonCalamariCruiser10get_statusEv called 0 returned 0% blocks executed 0%
+    #####:   68:int MonCalamariCruiser::get_status() const {
+    #####:   69:    return status;
+    %%%%%:   69-block  0
+        -:   70:}
+        -:   71:
+        -:   72:
+function _ZN13XWingSquadronC2Ev called 2 returned 100% blocks executed 100%
+        2:   73:XWingSquadron::XWingSquadron() {
+        2:   73-block  0
+call    0 returned 2
+        2:   74:    size = 3;
+        2:   75:    hits_to_destroy = 2;
+        2:   76:    laser_bursts = 2;
+        2:   77:    status = 0;
+        2:   78:}
+        -:   79:
+function _ZN13XWingSquadron9setStatusEi called 2 returned 100% blocks executed 100%
+        2:   80:void XWingSquadron::setStatus(int status) {
+        2:   81:    this->status = status;
+        2:   82:}
+        -:   83:
+function _ZN13XWingSquadron19set_hits_to_destroyEi called 0 returned 0% blocks executed 0%
+    #####:   84:void XWingSquadron::set_hits_to_destroy(int hits) {
+    #####:   85:    this->hits_to_destroy = hits_to_destroy - hits;
+    #####:   86:    if (hits_to_destroy < 0) {
+    %%%%%:   86-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   87:        hits_to_destroy = 0;
+    %%%%%:   87-block  0
+        -:   88:    }
+    #####:   89:}
+        -:   90:
+function _ZNK13XWingSquadron19get_hits_to_destroyEv called 0 returned 0% blocks executed 0%
+    #####:   91:int XWingSquadron::get_hits_to_destroy() const {
+    #####:   92:    return hits_to_destroy;
+    %%%%%:   92-block  0
+        -:   93:}
+        -:   94:
+function _ZNK13XWingSquadron8get_sizeEv called 0 returned 0% blocks executed 0%
+    #####:   95:int XWingSquadron::get_size() const {
+    #####:   96:    return size;
+    %%%%%:   96-block  0
+        -:   97:}
+        -:   98:
+function _ZNK13XWingSquadron16get_laser_burstsEv called 0 returned 0% blocks executed 0%
+    #####:   99:int XWingSquadron::get_laser_bursts() const {
+    #####:  100:    return laser_bursts;
+    %%%%%:  100-block  0
+        -:  101:}
+        -:  102:
+function _ZNK13XWingSquadron10get_statusEv called 0 returned 0% blocks executed 0%
+    #####:  103:int XWingSquadron::get_status() const {
+    #####:  104:    return status;
+    %%%%%:  104-block  0
+        -:  105:}
+        -:  106:
+        -:  107:
+function _ZN10TIEFighterC2Ev called 4 returned 100% blocks executed 100%
+        4:  108:TIEFighter::TIEFighter() {
+        4:  108-block  0
+call    0 returned 4
+        4:  109:    size = 1;
+        4:  110:    hits_to_destroy = 1;
+        4:  111:    laser_bursts = 1;
+        4:  112:    status = 0;
+        4:  113:}
+        -:  114:
+function _ZN10TIEFighter9setStatusEi called 4 returned 100% blocks executed 100%
+        4:  115:void TIEFighter::setStatus(int status) {
+        4:  116:    this->status = status;
+        4:  117:}
+        -:  118:
+function _ZN10TIEFighter19set_hits_to_destroyEi called 0 returned 0% blocks executed 0%
+    #####:  119:void TIEFighter::set_hits_to_destroy(int hits) {
+    #####:  120:    this->hits_to_destroy = hits_to_destroy - hits;
+    #####:  121:    if (hits_to_destroy < 0) {
+    %%%%%:  121-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  122:        hits_to_destroy = 0;
+    %%%%%:  122-block  0
+        -:  123:    }
+    #####:  124:}
+        -:  125:
+function _ZNK10TIEFighter19get_hits_to_destroyEv called 0 returned 0% blocks executed 0%
+    #####:  126:int TIEFighter::get_hits_to_destroy() const {
+    #####:  127:    return hits_to_destroy;
+    %%%%%:  127-block  0
+        -:  128:}
+        -:  129:
+function _ZNK10TIEFighter8get_sizeEv called 0 returned 0% blocks executed 0%
+    #####:  130:int TIEFighter::get_size() const {
+    #####:  131:    return size;
+    %%%%%:  131-block  0
+        -:  132:}
+        -:  133:
+function _ZNK10TIEFighter16get_laser_burstsEv called 0 returned 0% blocks executed 0%
+    #####:  134:int TIEFighter::get_laser_bursts() const {
+    #####:  135:    return laser_bursts;
+    %%%%%:  135-block  0
+        -:  136:}
+        -:  137:
+function _ZNK10TIEFighter10get_statusEv called 0 returned 0% blocks executed 0%
+    #####:  138:int TIEFighter::get_status() const {
+    #####:  139:    return status;
+    %%%%%:  139-block  0
+        -:  140:}
+        -:  141:
+        -:  142:
+        -:  143:
+        -:  144:
+        -:  145:
+        -:  146:
+        -:  147:
+        -:  148:

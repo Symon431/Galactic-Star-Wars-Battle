@@ -1,0 +1,119 @@
+        -:    0:Source:C:/Users/Admin/CLionProjects/2655389/Grid.cpp
+        -:    0:Graph:C:\Users\Admin\CLionProjects\2655389\cmake-build-debug-coverage\CMakeFiles\2655389.dir\Grid.cpp.gcno
+        -:    0:Data:C:\Users\Admin\CLionProjects\2655389\cmake-build-debug-coverage\CMakeFiles\2655389.dir\Grid.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Source is newer than graph
+        -:    1:#include "Grid.h"
+        -:    2:
+        -:    3:#include <iostream>
+        -:    4:using namespace std;
+        -:    5:
+        -:    6:
+function _ZN4GridC2Eii called 2 returned 100% blocks executed 100%
+        2:    7:Grid::Grid(int rows, int cols):rows(rows),columns(cols) {
+       12:    8:    for (int i = 0; i < rows; i++) {
+        2:    8-block  0
+       10:    8-block  1
+       12:    8-block  2
+branch  0 taken 10
+branch  1 taken 2 (fallthrough)
+       90:    9:        for (int j = 0; j < columns; j++) {
+       10:    9-block  0
+       90:    9-block  1
+branch  0 taken 80
+branch  1 taken 10 (fallthrough)
+       80:   10:            cells[i][j] = '*';
+       80:   10-block  0
+        -:   11:        }
+        -:   12:    }
+        -:   13:
+        2:   14:}
+        -:   15:
+        -:   16:
+function _ZNK4Grid7displayEv called 0 returned 0% blocks executed 0%
+    #####:   17:void Grid::display() const {
+    #####:   18:    for (int i = 0; i < rows; i++) {
+    %%%%%:   18-block  0
+    %%%%%:   18-block  1
+branch  0 never executed
+branch  1 never executed (fallthrough)
+    #####:   19:        for (int j = 0; j < columns; j++) {
+    %%%%%:   19-block  0
+    %%%%%:   19-block  1
+branch  0 never executed
+branch  1 never executed (fallthrough)
+    #####:   20:            cout << cells[i][j] << " ";
+    %%%%%:   20-block  0
+call    0 never executed
+call    1 never executed
+        -:   21:        }
+    #####:   22:        cout << endl;
+    %%%%%:   22-block  0
+call    0 never executed
+        -:   23:    }
+    #####:   24:    cout << endl;
+    %%%%%:   24-block  0
+call    0 never executed
+    #####:   25:}
+        -:   26:
+function _ZN4Grid9placeShipEiii called 0 returned 0% blocks executed 0%
+    #####:   27:void Grid::placeShip(int row, int column, int sizeOfShip) {
+    #####:   28:    if (!checkValidity(row, column))
+    %%%%%:   28-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
+    #####:   29:        return;
+    %%%%%:   29-block  0
+        -:   30:
+        -:   31:
+    #####:   32:    if (cells[row -1][column - 1] != '*')
+    %%%%%:   32-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:   33:        cout << "Ship already placed" << endl;
+    %%%%%:   33-block  0
+call    0 never executed
+call    1 never executed
+        -:   34:    else
+    #####:   35:        cells[row - 1][column - 1] = sizeOfShip + '0';
+    %%%%%:   35-block  0
+        -:   36:}
+        -:   37:
+        -:   38:
+function _ZN4Grid13checkValidityEii called 0 returned 0% blocks executed 0%
+    #####:   39:bool Grid::checkValidity(int row, int col) {
+        -:   40:
+    #####:   41:    if (row < 1 || row > this->rows) return false;
+    %%%%%:   41-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:   41-block  1
+branch  2 never executed (fallthrough)
+branch  3 never executed
+    %%%%%:   41-block  2
+        -:   42:
+    #####:   43:    if (col < 1 || col > this->columns) return false;
+    %%%%%:   43-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:   43-block  1
+branch  2 never executed (fallthrough)
+branch  3 never executed
+    %%%%%:   43-block  2
+        -:   44:
+    #####:   45:    return true;
+    %%%%%:   45-block  0
+        -:   46:}
+        -:   47:
+function _ZN4Grid17checkAvailabilityEii called 0 returned 0% blocks executed 0%
+    #####:   48:bool Grid::checkAvailability(int row, int col) {
+    #####:   49:   return cells[row -1][col - 1] == '*';
+    %%%%%:   49-block  0
+        -:   50:}
+        -:   51:
+        -:   52:
+        -:   53:
+        -:   54:
+        -:   55:
+        -:   56:
